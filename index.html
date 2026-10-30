@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102729">
+  <meta name="description" content="Conheça a linha de mobilidade elétrica VOE e fale com a equipe sobre atendimento para lojistas e parceiros.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VOE — Mobilidade elétrica para novos caminhos">
+  <meta property="og:description" content="Uma vitrine digital para apresentar a linha VOE a lojistas e parceiros.">
+  <title>VOE — Mobilidade elétrica para novos caminhos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="motion.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-design="editorial">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="prototype-bar">
+    <a class="prototype-brand" href="#inicio" aria-label="Protótipo VOE, início">
+      <img src="assets/voe.svg" alt="VOE" width="96" height="27">
+      <span>PROTÓTIPO</span>
+    </a>
+    <div class="design-picker" role="group" aria-label="Escolha uma direção visual">
+      <button type="button" data-design="editorial" aria-pressed="true"><span>01</span> Editorial</button>
+      <button type="button" data-design="industrial" aria-pressed="false"><span>02</span> Distribuição</button>
+      <button type="button" data-design="studio" aria-pressed="false"><span>03</span> Coleção</button>
+    </div>
+    <p class="prototype-hint" id="design-status" aria-live="polite">Direção selecionada: Editorial</p>
+  </header>
+
+  <div class="page-shell">
+    <div class="announcement"><span class="signal-dot" aria-hidden="true"></span> MOBILIDADE ELÉTRICA · RELACIONAMENTO COM LOJISTAS</div>
+    <header class="site-header" id="inicio">
+      <a class="site-logo" href="#inicio" aria-label="VOE, início"><img src="assets/voe.svg" alt="VOE" width="120" height="33"></a>
+      <nav aria-label="Navegação principal">
+        <a href="#linha">A linha</a><a href="#parceria">Para lojistas</a><a href="#contato">Contato</a>
+      </nav>
+      <a class="header-cta" href="#contato">Converse com a equipe <svg class="icon icon-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M18 13v6H5V6h6"/></svg></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir navegação" aria-expanded="false">Menu</button>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>01</span> UMA NOVA FORMA DE SE MOVER</p>
+          <h1 id="hero-title">Mobilidade elétrica.<br><em>Novos caminhos.</em></h1>
+          <p class="hero-lede">Uma vitrine para conhecer a linha VOE e iniciar uma conversa comercial sobre os modelos e condições para lojistas.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#linha">Explorar a linha <svg class="icon icon-down" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></a><a class="text-link" href="#parceria">Conhecer a proposta B2B <svg class="icon icon-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M18 13v6H5V6h6"/></svg></a></div>
+          <p class="hero-note">Mix, disponibilidade e condições comerciais: consulte a equipe.</p>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-wrap"><img src="assets/voe-x-infinity-cor-preto.webp" alt="Scooter elétrica VOE X-Infinity preta, vista em três quartos" fetchpriority="high"></div>
+          <div class="hero-image-index"><span>VOE / X-INFINITY</span><span>LINHA DE REFERÊNCIA</span></div>
+          <span class="orbit orbit-a" aria-hidden="true"></span><span class="orbit orbit-b" aria-hidden="true"></span>
+        </div>
+        <div class="hero-side-label" aria-hidden="true">MOVE / FORWARD — VOE</div>
+      </section>
+
+      <section class="proof-strip" aria-label="Sobre a linha">
+        <p>Uma marca. Diferentes formas de seguir.</p><span>01 / SCOOTERS</span><span>02 / BIKES</span><span>03 / MOBILIDADE ELÉTRICA</span>
+      </section>
+
+      <section class="collection section-pad" id="linha" aria-labelledby="line-title">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span>02</span> CONHEÇA A LINHA</p><h2 id="line-title">Modelos que abrem<br><em>novas possibilidades.</em></h2></div>
+          <p class="section-intro">Explore modelos VOE apresentados em fontes públicas e consulte com a equipe o catálogo, o mix e as condições para lojistas.</p>
+        </div>
+        <div class="catalog-controls">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="model-search" placeholder="Buscar na linha" aria-label="Buscar modelos"></label>
+          <div class="filter-group" role="group" aria-label="Filtrar por categoria">
+            <button type="button" class="filter-button is-active" data-filter="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="filter-button" data-filter="scooter" aria-pressed="false">Scooters</button>
+            <button type="button" class="filter-button" data-filter="bike" aria-pressed="false">Bikes</button>
+          </div>
+          <p id="result-count" aria-live="polite">4 modelos de referência</p>
+        </div>
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-name="x-infinity scooter" data-category="scooter">
+            <a class="product-image" href="#contato" aria-label="Consultar a linha VOE X-Infinity"><img src="assets/voe-x-infinity-cor-preto.webp" alt="Scooter VOE X-Infinity preta com banco caramelo" loading="lazy"><span class="image-index">VOE · 01</span></a>
+            <div class="product-meta"><span>SCOOTER ELÉTRICA</span><span>01 / 04</span></div><h3>X-Infinity</h3><p>Presença urbana. Uma leitura contemporânea da linha VOE.</p><a class="product-link" href="#contato" data-interest="X-Infinity">Consultar este modelo <svg class="icon icon-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M18 13v6H5V6h6"/></svg></a>
+          </article>
+          <article class="product-card" data-name="susan scooter retrô" data-category="scooter">
+            <a class="product-image" href="#contato" aria-label="Consultar a linha VOE Susan"><img src="assets/voe-susan-cor-vinhobege.webp" alt="Scooter VOE Susan em tons vinho e bege, estilo retrô" loading="lazy"><span class="image-index">VOE · 02</span></a>
+            <div class="product-meta"><span>SCOOTER ELÉTRICA</span><span>02 / 04</span></div><h3>Susan</h3><p>Um desenho retrô com personalidade e identidade própria.</p><a class="product-link" href="#contato" data-interest="Susan">Consultar este modelo <svg class="icon icon-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M18 13v6H5V6h6"/></svg></a>
+          </article>
+          <article class="product-card" data-name="sol scooter elétrica" data-category="scooter">
+            <a class="product-image" href="#contato" aria-label="Consultar a linha VOE Sol"><img src="assets/voe-sol-cor-preto.webp" alt="Bicicleta elétrica VOE Sol preta com cesta frontal" loading="lazy"><span class="image-index">VOE · 03</span></a>
+            <div class="product-meta"><span>SCOOTER ELÉTRICA</span><span>03 / 04</span></div><h3>Sol</h3><p>Formato prático para ampliar as possibilidades de mobilidade.</p><a class="product-link" href="#contato" data-interest="Sol">Consultar este modelo <svg class="icon icon-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M18 13v6H5V6h6"/></svg></a>
+          </article>
+          <article class="product-card" data-name="calebito bike bicicleta elétrica" data-category="bike">
+            <a class="product-image" href="#contato" aria-label="Consultar a linha VOE Calebito"><img src="assets/voe-calebito-cor-branco.webp" alt="Bicicleta elétrica VOE Calebito branca e preta com cesta frontal" loading="lazy"><span class="image-index">VOE · 04</span></a>
+            <div class="product-meta"><span>BICICLETA ELÉTRICA</span><span>04 / 04</span></div><h3>Calebito</h3><p>Uma alternativa compacta para a mobilidade do dia a dia.</p><a class="product-link" href="#contato" data-interest="Calebito">Consultar este modelo <svg class="icon icon-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M18 13v6H5V6h6"/></svg></a>
+          </article>
+        </div>
+        <p class="catalog-disclaimer">Modelos e imagens são referências públicas de mercado associadas à VOE. Não confirmam o mix atual nem disponibilidade na Voe Distribuidora. Confirme catálogo, condições comerciais e autorização de uso das imagens com a equipe.</p>
+      </section>
+
+      <section class="partner-section" id="parceria" aria-labelledby="partner-title">
+        <div class="partner-image"><img src="assets/voe-sol-cor-preto.webp" alt="Detalhe da bicicleta elétrica VOE Sol" loading="lazy"><span class="partner-image-label">UMA LINHA PARA EXPLORAR</span></div>
+        <div class="partner-copy"><p class="eyebrow"><span>03</span> CONEXÃO COM O VAREJO</p><h2 id="partner-title">Uma boa parceria<br>começa com <em>uma conversa.</em></h2><p>A equipe comercial pode apresentar a linha VOE e orientar lojistas sobre o mix de produtos, materiais e condições para revenda.</p><p class="partner-small">Detalhes de distribuição, suporte, logística, disponibilidade e condições são tratados diretamente com a equipe comercial.</p><a class="button button-light" href="https://www.instagram.com/voe.distribuidorasp/" target="_blank" rel="noopener noreferrer">Falar com a Voe Distribuidora <svg class="icon icon-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M18 13v6H5V6h6"/></svg></a></div>
+      </section>
+
+      <section class="contact-band" id="contato"><div><p class="eyebrow"><span>04</span> PRÓXIMO PASSO</p><h2>Vamos conversar<br>sobre a linha VOE?</h2></div><div class="contact-copy"><p>Entre em contato pelo perfil da Voe Distribuidora para consultar catálogo atualizado, disponibilidade e condições para lojistas.</p><a class="button button-primary" href="https://www.instagram.com/voe.distribuidorasp/" target="_blank" rel="noopener noreferrer">Abrir Instagram comercial <svg class="icon icon-external" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4 10 14M18 13v6H5V6h6"/></svg></a></div></section>
+    </main>
+    <footer class="site-footer"><a href="#inicio" aria-label="Voltar ao início"><img src="assets/voe.svg" alt="VOE" width="78" height="22"></a><p>Protótipo conceitual para avaliação · Informações comerciais devem ser confirmadas.</p><a href="#inicio">Voltar ao topo <svg class="icon icon-up" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4m-7 7 7-7 7 7"/></svg></a></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+@keyframes voe-copy-in{from{opacity:0;transform:translate3d(0,16px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes voe-image-in{from{opacity:0;transform:translate3d(0,10px,0) scale(.99)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+@keyframes voe-product-drift{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,-5px,0)}}
+html.motion-ready .hero-copy{animation:voe-copy-in .72s cubic-bezier(.2,.7,.2,1) both}
+html.motion-ready .hero-visual{animation:voe-image-in .9s .08s cubic-bezier(.2,.7,.2,1) both}
+html.motion-ready .hero-image-wrap img{animation:voe-product-drift 8s 1s ease-in-out infinite alternate}
+html.motion-ready .motion-reveal{opacity:0;transform:translate3d(0,24px,0);transition:opacity .72s cubic-bezier(.2,.7,.2,1),transform .72s cubic-bezier(.2,.7,.2,1)}
+html.motion-ready .motion-reveal.is-visible{opacity:1;transform:translate3d(0,0,0)}
+html.motion-ready .motion-stagger>*{opacity:0;transform:translate3d(0,16px,0);transition:opacity .52s cubic-bezier(.2,.7,.2,1),transform .52s cubic-bezier(.2,.7,.2,1)}
+html.motion-ready .motion-stagger.is-visible>*{opacity:1;transform:translate3d(0,0,0)}
+html.motion-ready .product-grid>*:nth-child(2){transition-delay:.07s}html.motion-ready .product-grid>*:nth-child(3){transition-delay:.14s}html.motion-ready .product-grid>*:nth-child(4){transition-delay:.21s}
+.page-shell{transition:opacity .24s ease,transform .24s ease}body.design-is-switching .page-shell{opacity:.72;transform:translateY(5px)}
+.site-header nav a{position:relative;transition:color .2s ease}.site-header nav a::after{position:absolute;right:0;bottom:4px;left:0;height:1px;background:var(--teal-dark);content:"";transform:scaleX(0);transform-origin:left;transition:transform .24s cubic-bezier(.2,.7,.2,1)}.site-header nav a:hover::after,.site-header nav a:focus-visible::after{transform:scaleX(1)}
+.design-picker button{transition:background .22s ease,color .22s ease,transform .2s ease}.design-picker button:hover{transform:translateY(-1px)}
+.button:active,.header-cta:active,.filter-button:active{transform:translateY(1px) scale(.985)}
+.product-link{transition:color .2s ease,border-color .2s ease,padding-left .2s ease}.product-link:hover{padding-left:5px;color:#318e91}
+.product-image img{transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .3s ease}.product-card:hover .product-image img{transform:scale(1.035)}
+.filter-button{transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}.filter-button:hover{transform:translateY(-1px)}
+.toast{transition:opacity .24s ease,transform .24s cubic-bezier(.2,.7,.2,1)}
+@media(max-width:620px){.site-header nav{display:flex;max-height:0;overflow:hidden;opacity:0;transform:translateY(-7px);visibility:hidden;pointer-events:none;transition:max-height .3s cubic-bezier(.2,.7,.2,1),opacity .2s ease,transform .25s ease,visibility 0s linear .3s}.site-header nav.is-open{display:flex;max-height:360px;opacity:1;transform:translateY(0);visibility:visible;pointer-events:auto;transition-delay:0s}}
+@media(prefers-reduced-motion:reduce){html.motion-ready .hero-copy,html.motion-ready .hero-visual,html.motion-ready .hero-image-wrap img{animation:none!important}html.motion-ready .motion-reveal,html.motion-ready .motion-reveal.is-visible,html.motion-ready .motion-stagger>*,html.motion-ready .motion-stagger.is-visible>*{opacity:1;transform:none;transition:none!important}.page-shell{transition:none!important}.site-header nav,.site-header nav.is-open{transition:none!important}.site-header nav{max-height:0;opacity:0;transform:none;visibility:hidden;pointer-events:none}.site-header nav.is-open{max-height:360px;opacity:1;visibility:visible;pointer-events:auto}}
